@@ -33,6 +33,13 @@ namespace lego {
     }
 
     /**
+     * Shows a brickified sprite image
+     */
+    export function showBricks(i: Image) {
+        const s = sprites.create(brickify(i))
+    }
+
+    /**
      * Expands an image into a LEGO rendering
      */
     //% blockId=legolegoify block="lego brickify $i"
@@ -69,18 +76,19 @@ namespace lego {
     //% blockId=legoshowcursor block="lego show cursor"
     export function showCursor() {
         const c = sprites.create(img`
-            8 8 8 . . . 8 8 8
+            8 8 8 . b . 8 8 8
             8 9 . . 9 . . 9 8
             8 . . . 6 . . . 8
             . . . . . . . . .
-            . 9 6 . 9 . 6 9 .
+            b 9 6 . 1 . 6 9 b
             . . . . . . . . .
             8 . . . 6 . . . 8
             8 9 . . 9 . . 9 8
-            8 8 8 . . . 8 8 8
+            8 8 8 . b . 8 8 8
         `)
         controller.moveSprite(c)
         scene.cameraFollowSprite(c)
+        c.z = 1000;
     }
 
     scene.setBackgroundColor(7);
