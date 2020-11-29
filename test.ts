@@ -16,7 +16,7 @@ const i = img`
     . . 8 1 2 2 2 2 2 5 5 5 1 1 . .
     . . . 8 8 8 8 8 8 8 8 1 1 . . .
 `;
-const l = lego.legoify(i)
-
-scene.setBackgroundColor(7)
+lego.setMouldingColorsPalette()
+lego.showCursor()
+const l = lego.brickify(i)
 let mySprite = sprites.create(l)

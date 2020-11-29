@@ -8,6 +8,7 @@ namespace lego {
      */
     //% blockId=legosetpalette block="lego set moulding colors palette"
     export function setMouldingColorsPalette() {
+        scene.setBackgroundColor(7);
         const buffer = color.ColorBuffer.fromBuffer(
             hex`
         000000
@@ -34,8 +35,8 @@ namespace lego {
     /**
      * Expands an image into a LEGO rendering
      */
-    //% blockId=legolegoify block="legoify $i"
-    export function legoify(i: Image) {
+    //% blockId=legolegoify block="lego brickify $i"
+    export function brickify(i: Image) {
         const cell = 9;
         const cellmargin = 2;
         const celldot = 4;
@@ -62,5 +63,26 @@ namespace lego {
         return l;    
     }
 
+    /**
+     * Creates a cursor sprite to explore the LEGO rendering
+     */
+    //% blockId=legoshowcursor block="lego show cursor"
+    export function showCursor() {
+        const c = sprites.create(img`
+            8 8 8 . . . 8 8 8
+            8 9 . . 9 . . 9 8
+            8 . . . 6 . . . 8
+            . . . . . . . . .
+            . 9 6 . 9 . 6 9 .
+            . . . . . . . . .
+            8 . . . 6 . . . 8
+            8 9 . . 9 . . 9 8
+            8 8 8 . . . 8 8 8
+        `)
+        controller.moveSprite(c)
+        scene.cameraFollowSprite(c)
+    }
+
+    scene.setBackgroundColor(7);
     setMouldingColorsPalette();
 }
