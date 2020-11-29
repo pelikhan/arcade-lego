@@ -3,6 +3,32 @@
 
 > Open this page at [https://pelikhan.github.io/arcade-lego/](https://pelikhan.github.io/arcade-lego/)
 
+Renders an image in 2D brick like LEGOs, which makes it easier to rebuild
+the image with real bricks.
+
+```blocks
+lego.setMouldingColorsPalette()
+lego.showCursor()
+lego.showBricks(img`
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . .
+    . . . . . . . . . 1 5 5 1 . . .
+    . . . . . . 1 1 1 1 1 1 . . . .
+    . . . . . 1 1 5 5 5 5 5 1 . . .
+    . 1 1 1 1 1 5 5 5 5 5 5 5 1 . .
+    . 1 2 5 1 5 5 5 5 5 5 5 5 1 . .
+    . . 1 5 5 1 5 2 1 f 5 2 2 f . .
+    . . 1 2 5 5 1 1 f f 5 2 2 c . .
+    1 1 2 1 5 5 5 2 f 2 2 2 2 2 1 .
+    1 2 2 c 2 5 5 1 5 2 2 2 2 2 2 1
+    8 2 2 2 c c 1 5 5 5 5 5 5 5 1 .
+    8 1 2 2 2 2 2 5 5 5 5 5 5 5 1 .
+    . 8 2 2 2 2 2 2 5 5 5 5 5 2 1 .
+    . . 8 1 2 2 2 2 2 5 5 5 1 1 . .
+    . . . 8 8 8 8 8 8 8 8 1 1 . . .
+`)
+```
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.

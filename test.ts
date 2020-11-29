@@ -19,5 +19,3 @@ const i = img`
 lego.setMouldingColorsPalette()
 lego.showCursor()
 lego.showBricks(i)
-//const l = lego.brickify(i)
-//let mySprite = sprites.create(l)
