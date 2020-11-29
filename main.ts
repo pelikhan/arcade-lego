@@ -35,15 +35,16 @@ namespace lego {
     /**
      * Shows a brickified sprite image
      */
-    //% blockId=legoshowbricks block="show bricks $i"
+    //% blockId=legoshowbricks block="show bricks $i=screen_image_picker"
     export function showBricks(i: Image) {
         const s = sprites.create(brickify(i))
+        s.setFlag(SpriteFlag.Ghost, true)
     }
 
     /**
      * Expands an image into a LEGO rendering
      */
-    //% blockId=legolegoify block="lego brickify $i"
+    //% blockId=legolegoify block="lego brickify $i=screen_image_picker"
     export function brickify(i: Image) {
         const cell = 9;
         const cellmargin = 2;
