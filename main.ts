@@ -35,6 +35,7 @@ namespace lego {
     /**
      * Shows a brickified sprite image
      */
+    //% blockId=legoshowbricks block="show bricks $i"
     export function showBricks(i: Image) {
         const s = sprites.create(brickify(i))
     }
