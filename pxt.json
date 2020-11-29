@@ -2,7 +2,8 @@
     "name": "arcade-lego",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "palette": "*"
     },
     "files": [
         "main.ts",
