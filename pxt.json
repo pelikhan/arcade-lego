@@ -23,23 +23,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj",
-    "palette": [
-        "#000000",
-        "#ffffff",
-        "#ff0000",
-        "#EE9DC3",
-        "#ff6600",
-        "#F7CE46",
-        "#478CC6",
-        "#00cc00",
-        "#0000ff",
-        "#68c3e2",
-        "#990066",
-        "#a06eb9",
-        "#cda4de",
-        "#F5C189",
-        "#A83D15",
-        "#000000"
-    ]
+    "preferredEditor": "tsprj"
 }
