@@ -4,7 +4,7 @@
 > Open this page at [https://pelikhan.github.io/arcade-lego/](https://pelikhan.github.io/arcade-lego/)
 
 Renders an image in 2D brick like LEGOs, which makes it easier to rebuild
-the image with real bricks.
+the image with real bricks. It reuses colors from the [LEGO Mouliding Colors](https://brickset.com/assets/images/misc/palette.png).
 
 ```blocks
 lego.setMouldingColorsPalette()
